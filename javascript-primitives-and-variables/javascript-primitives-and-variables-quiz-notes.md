@@ -17,7 +17,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the purpose of a string?
   To store information as text!
 - What is the purpose of a number?
-  To store information numerically!
+  To store information numerically!!
 - What is the purpose of a boolean?
   To store binary information, often true/false.
 - What does the `=` operator mean in JavaScript?

@@ -7,7 +7,7 @@ console.log(
   'totalPets = ' + totalPets + ", and it's type is " + typeof totalPets
 );
 const unknown = null;
-console.log(`unknown is ${unknown}`); // using backticks
+console.log(`unknown is ${unknown}`); // using backticks here
 console.log(`The type of unknown is ${typeof unknown}`);
 let never;
 console.log('never is ' + never); // using single quotes
