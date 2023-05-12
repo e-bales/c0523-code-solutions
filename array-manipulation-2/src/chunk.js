@@ -2,7 +2,6 @@
 function chunk(array, size) {
   if (array.length === 0) return array;
   const totalArray = [[]];
-  // const subArray = [];
   let i = 0;
   let positionCount = 0;
   while (i < array.length) {
