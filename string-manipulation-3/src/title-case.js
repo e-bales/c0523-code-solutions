@@ -46,7 +46,6 @@ function titleCase(title) {
 
     if (currWord.split('-').length > 1) {
       // for words with a dash
-      // debugger;
       const testWord = currWord.split('-');
       for (let j = 0; j < testWord.length; j++) {
         testWord[j] =
