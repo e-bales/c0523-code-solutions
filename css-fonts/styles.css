@@ -1,0 +1,16 @@
+p {
+  font-family: 'Baskervville', serif;
+}
+
+h1,
+h2 {
+  font-family: 'Homemade Apple', cursive;
+}
+
+h2 {
+  font-style: italic;
+}
+
+body {
+  line-height: 30px;
+}
