@@ -1,13 +1,14 @@
 h2 {
   color: #ec5d57;
-  font-family: 'Brandon Grotesque', serif;
+  font-family: 'Brandon Grotesque', sans-serif;
   letter-spacing: 2px;
   font-size: 1rem;
+  text-align: center;
 }
 
 label {
   text-transform: uppercase;
-  font-family: 'Brandon Grotesque', serif;
+  font-family: 'Brandon Grotesque', sans-serif;
   font-size: 10px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -51,14 +52,14 @@ button {
   border-bottom: #ec5d57;
   border-right: #ec5d57;
   color: white;
-  font-family: 'Brandon Grotesque', serif;
+  font-family: 'Brandon Grotesque', sans-serif;
   text-transform: uppercase;
   font-size: 80%;
 }
 
 select {
   background-color: #f3f3f3;
-  font-family: 'Brandon Grotesque', serif;
+  font-family: 'Brandon Grotesque', sans-serif;
   padding: 5px;
   font-size: ;
 }
