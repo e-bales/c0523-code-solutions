@@ -1,0 +1,258 @@
+* {
+  font-family: Avenir, sans-serif;
+}
+
+.fancy-text {
+  font-family: 'Tiempos Headline', serif;
+}
+
+div#primary-care {
+  position: relative;
+}
+
+.container {
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #ebedf0;
+}
+
+.logo-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20%;
+}
+
+.top img {
+  width: 180px;
+}
+
+.column-one-half {
+  flex-basis: 50%;
+}
+
+#header #links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10%;
+  color: #b8b8b8;
+}
+
+#links p {
+  padding-right: 48px;
+  font-weight: bold;
+}
+
+#links button {
+  background-color: #294464;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 5%;
+  font-size: large;
+}
+
+.get-started {
+  background-color: #294464;
+  border-bottom: #294464;
+  border-right: #294464;
+  color: white;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 6%;
+  font-weight: bold;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+#primary-care {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 36.5rem;
+  background-image: url('images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#primary-care > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 42.5%;
+  margin-left: 8%;
+  margin-top: 3.5%;
+  color: white;
+}
+
+#primary-care button {
+  z-index: 1;
+}
+
+h2.primary-care-text {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+p.primary-care-text {
+  line-height: 1.8rem;
+  z-index: 1;
+  margin-bottom: 10%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+#clinicians {
+  background-color: #fafafa;
+  color: #6e6e6e;
+  height: 33rem;
+  border-bottom: solid;
+  border-color: #f0f1f3;
+}
+
+#clinicians .column-one-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.clinicians-text {
+  text-align: center;
+  width: 35%;
+  margin: auto;
+}
+
+h2.clinicians-text {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 180%;
+}
+
+p.clinicians-text {
+  line-height: 150%;
+  margin-bottom: 5%;
+  font-size: 110%;
+}
+
+#left {
+  padding-left: 150px;
+}
+
+#right {
+  padding-right: 210px;
+}
+
+.location {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#middle {
+  padding-top: 1.5%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  color: #6e6e6e;
+}
+
+#middle .column-one-half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#middle h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+#middle h3 {
+  font-weight: 100;
+}
+
+div.button {
+  display: flex;
+  justify-content: right;
+  padding-right: 22%;
+}
+
+#footer-1 {
+  background-color: #525351;
+  border-bottom: solid;
+  border-color: #d8d8d8;
+  color: white;
+  height: 28rem;
+}
+
+#footer-1 > .row {
+  display: flex;
+  align-items: center;
+}
+
+#footer-info {
+  margin-left: 10%;
+}
+
+.footer-column {
+  display: flex;
+  font-size: 20px;
+  padding-top: 5.5rem;
+}
+
+.footer-img img {
+  width: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+p.info {
+  line-height: 1.7rem;
+}
+
+#bottom {
+  background-color: #fafafa;
+  color: #7f7f7f;
+  height: 7rem;
+  font-weight: bold;
+}
+
+#bottom div.column-full {
+  display: flex;
+  margin-left: 10%;
+  align-items: center;
+}
+
+#bottom p {
+  padding-right: 40px;
+}
