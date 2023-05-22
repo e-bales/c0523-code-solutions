@@ -7,9 +7,6 @@ function handleClick(event) {
 const $clickButton = document.querySelector('.click-button');
 
 $clickButton.addEventListener('click', handleClick);
-$clickButton.addEventListener('dblclick', () => {
-  console.log('Woah there Nelly');
-}); // ask about this!
 
 function mouseOver(event) {
   console.log('button hovered');
