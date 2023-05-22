@@ -3,8 +3,6 @@ let numClicks = 0;
 const $hotButton = document.querySelector('.hot-button');
 const $documentClicks = document.querySelector('.click-count');
 
-console.log($documentClicks);
-
 $hotButton.addEventListener('click', () => {
   numClicks++;
   $documentClicks.textContent = `Clicks: ${numClicks}`;
