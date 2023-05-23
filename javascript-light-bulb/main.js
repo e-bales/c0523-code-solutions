@@ -3,7 +3,6 @@ const $body = document.querySelector('body');
 const bulbList = $lightbulb.classList;
 
 function changeBulb(event) {
-  console.log('Callback called!');
   if (bulbList[1] === 'on') {
     // want to turn off
     $body.className = 'dark';
