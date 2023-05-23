@@ -1,0 +1,60 @@
+h2,
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.accuracy-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+div.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12.5%;
+}
+
+.current {
+  border-bottom: 0.25rem solid black;
+}
+
+.completed {
+  color: rgb(56, 185, 36);
+}
+
+.wrong {
+  color: rgb(255, 0, 0);
+  border-bottom: solid red;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  margin-top: 3rem;
+  background-color: #eb5d5d;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 35px;
+  box-shadow: 0 3px 3px gray;
+}
+
+.unseen {
+  display: none;
+}
