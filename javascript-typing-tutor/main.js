@@ -8,7 +8,6 @@ let incorrect = 0;
 let ended = false;
 
 document.addEventListener('keydown', (event) => {
-  console.log(event.key);
   if (counter < $spanList.length) {
     const currChar = $spanList[counter];
     if (currChar.textContent === event.key) {
