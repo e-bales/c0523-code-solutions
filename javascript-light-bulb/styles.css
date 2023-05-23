@@ -1,0 +1,30 @@
+body[class='light'] {
+  background-color: #fef9f1;
+}
+
+body[class='dark'] {
+  background-color: #111;
+}
+
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 12.5%;
+}
+
+.bulb {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.on {
+  background-color: #faea84;
+  box-shadow: 0 0 50px 15px yellow;
+}
+
+.off {
+  background-color: #252525;
+  box-shadow: 0 0 50px 15px #1d1d1d;
+}
