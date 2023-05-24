@@ -67,33 +67,33 @@ const pokedex = [
 ];
 
 function renderPokemon(pokemon) {
-  const topDiv = document.createElement('div');
-  topDiv.setAttribute('class', 'column-third');
+  const $topDiv = document.createElement('div');
+  $topDiv.setAttribute('class', 'column-third');
 
-  const secondDiv = document.createElement('div');
-  secondDiv.setAttribute('class', 'pokemon-card');
-  topDiv.appendChild(secondDiv);
+  const $secondDiv = document.createElement('div');
+  $secondDiv.setAttribute('class', 'pokemon-card');
+  $topDiv.appendChild($secondDiv);
 
-  const imageElem = document.createElement('img');
+  const $imageElem = document.createElement('img');
   const url = pokemon.imageUrl;
-  imageElem.setAttribute('src', url);
-  secondDiv.appendChild(imageElem);
+  $imageElem.setAttribute('src', url);
+  $secondDiv.appendChild($imageElem);
 
-  const thirdDiv = document.createElement('div');
-  thirdDiv.setAttribute('class', 'pokemon-card-text');
-  secondDiv.appendChild(thirdDiv);
+  const $thirdDiv = document.createElement('div');
+  $thirdDiv.setAttribute('class', 'pokemon-card-text');
+  $secondDiv.appendChild($thirdDiv);
 
-  const pokemonName = document.createElement('h2');
-  pokemonName.textContent = pokemon.name;
-  const pokemonNumber = document.createElement('h3');
-  pokemonNumber.textContent = '#' + pokemon.number;
-  const pokemonDesc = document.createElement('p');
-  pokemonDesc.textContent = pokemon.description;
-  thirdDiv.appendChild(pokemonName);
-  thirdDiv.appendChild(pokemonNumber);
-  thirdDiv.appendChild(pokemonDesc);
+  const $pokemonName = document.createElement('h2');
+  $pokemonName.textContent = pokemon.name;
+  const $pokemonNumber = document.createElement('h3');
+  $pokemonNumber.textContent = '#' + pokemon.number;
+  const $pokemonDesc = document.createElement('p');
+  $pokemonDesc.textContent = pokemon.description;
+  $thirdDiv.appendChild($pokemonName);
+  $thirdDiv.appendChild($pokemonNumber);
+  $thirdDiv.appendChild($pokemonDesc);
 
-  return topDiv;
+  return $topDiv;
 }
 
 const $row = document.querySelector('.row');
