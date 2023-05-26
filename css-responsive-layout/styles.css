@@ -8,7 +8,7 @@ body {
 }
 
 .fighter {
-  flex-basis: 100%;
+  width: 100%;
 }
 
 .container {
