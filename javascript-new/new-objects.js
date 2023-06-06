@@ -1,0 +1,19 @@
+const anObject = new Object();
+const anArray = new Array();
+const aFunction = new Function();
+const aString = new String();
+const aNumber = new Number();
+const aBoolean = new Boolean();
+
+console.log('Value of anObject: ', anObject);
+console.log('Type of anObject', typeof anObject);
+console.log('Value of anArray: ', anArray);
+console.log('Type of anArray', typeof anArray);
+console.log('Value of aFunction: ', aFunction);
+console.log('Type of aFucntion', typeof aFunction);
+console.log('Value of aString: ', aString);
+console.log('Type of aString', typeof aString);
+console.log('Value of aNumber: ', aNumber);
+console.log('Type of aNumber', typeof aNumber);
+console.log('Value of aBoolean: ', aBoolean);
+console.log('Type of aBoolean', typeof aBoolean);
