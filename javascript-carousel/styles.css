@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 60%;
+  margin: auto;
+}
+
+.top {
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.column-arrow {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-img {
+  width: 70%;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.i-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
