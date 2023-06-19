@@ -39,7 +39,6 @@ function addEmployees() {
   xhr.responseType = 'json';
 
   xhr.addEventListener('load', (event) => {
-    console.log(xhr.response);
     for (let i = 0; i < 4; i++) {
       const newEmp = createEmployee(xhr.response[i]);
       business.employees[xhr.response[i].username] = newEmp;
