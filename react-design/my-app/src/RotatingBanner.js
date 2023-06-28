@@ -4,30 +4,31 @@ import './RotatingBanner.css';
 import { useState } from 'react';
 
 export default function RotatingBanner({ itemsArray }) {
-  const [index, setIndex] = useState(0);
+  const [bannerIndex, setBannerIndex] = useState(0);
 
   function increment() {
     // used with the 'Next' button
-    setIndex((index + 1) % itemsArray.length);
+    setBannerIndex((bannerIndex + 1) % itemsArray.length);
   }
   function decrement() {
     // used with the 'Prev' button
-    setIndex(customModulo(index - 1, itemsArray.length));
+    setBannerIndex(customModulo(bannerIndex - 1, itemsArray.length));
   }
   function customIndex(text) {
     // used with the number buttons
-    setIndex(text);
+    setBannerIndex(text);
   }
   const numberButtons = itemsArray.map((element, index) => (
     <BannerButton
       key={index}
       text={index}
+      selected={index === bannerIndex}
       onCustomClick={customIndex}></BannerButton>
   ));
 
   return (
     <div className="banner">
-      <BannerTitle text={itemsArray[index]}></BannerTitle>
+      <BannerTitle text={itemsArray[bannerIndex]}></BannerTitle>
       <div className="buttons">
         <BannerButton text="Prev" onCustomClick={decrement}></BannerButton>
         <div className="num-buttons">{numberButtons}</div>
