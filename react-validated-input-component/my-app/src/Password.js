@@ -6,16 +6,10 @@ import './Password.css';
 
 export default function Password() {
   const [password, setPassword] = useState('');
-  const [valid, setValid] = useState(false);
 
   function handleInput(e) {
     const passwordVal = e.target.value;
     setPassword(passwordVal);
-    if (passwordVal.length > 7) {
-      setValid(true);
-    } else if (valid) {
-      setValid(false);
-    }
   }
 
   return (
@@ -28,7 +22,7 @@ export default function Password() {
             value={password}
             onChange={(e) => handleInput(e)}
             type="password"></input>
-          {valid ? (
+          {password.length > 7 ? (
             <FontAwesomeIcon
               className="icon"
               icon={faCheck}
@@ -46,7 +40,7 @@ export default function Password() {
         </div>
       </label>
       <div className="error-msg">
-        {valid ? (
+        {password.length > 7 ? (
           <p></p>
         ) : password.length === 0 ? (
           <p>A password is required</p>
