@@ -1,0 +1,8 @@
+.App {
+  position: relative;
+  height: 100%;
+}
+
+.menu-bars {
+  cursor: pointer;
+}
