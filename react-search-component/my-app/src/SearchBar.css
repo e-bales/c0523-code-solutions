@@ -1,0 +1,22 @@
+input {
+  border: 3px black solid;
+  border-radius: 0.5rem;
+  height: 1.35rem;
+  width: 17rem;
+  color: rgb(129, 129, 129);
+  text-indent: 1.5rem;
+}
+
+i {
+  width: 100%;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.35rem;
+}

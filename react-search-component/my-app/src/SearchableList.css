@@ -1,0 +1,15 @@
+.search-list {
+  border: 2px black solid;
+  width: 80%;
+  display: auto;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  min-height: 25rem;
+  text-overflow: ellipsis;
+}
+
+.search-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
