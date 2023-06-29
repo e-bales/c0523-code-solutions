@@ -4,12 +4,12 @@ import './SearchableList.css';
 import { useState } from 'react';
 
 export default function SearchableList({ list }) {
-  let [input, setInput] = useState('');
+  const [input, setInput] = useState('');
 
   return (
     <div className="search-wrap">
       <div className="search-list">
-        <SearchBar state={input} setState={setInput} />
+        <SearchBar state={input} changeState={setInput} />
         <DisplayList input={input} list={list} />
       </div>
     </div>
