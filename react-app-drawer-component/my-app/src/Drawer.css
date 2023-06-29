@@ -38,7 +38,6 @@ h4:hover {
 }
 
 .hidden {
-  /* display: none; */
   transform: translateX(-283px);
 }
 
