@@ -1,0 +1,500 @@
+   61  git status
+   62  git commit -m "changed ternary to logical AND"
+   63  git switch main
+   64  git push origin es6-operators 
+   65  git pull
+   66  git branch big-o-notation
+   67  git branch npm-intro
+   68  git switch big-o-notation
+   69  git switch npm-intro
+   70  cd npm-intro/
+   71  cp .npm-init.js ~/.npm-init.js
+   72  npm init --yes
+   73  npm install jquery
+   74  npm install --save-dev
+   75  npm install --save-dev eslint
+   76  npm run hello
+   77  cd ..
+   78  git status
+   79  git add npm-intro/
+   80  git status
+   81  git commit -m "completed npm-intro exercise"
+   82  git switch main
+   83  git push origin npm-intro 
+   84  git switch big-o-notation 
+   85  git status
+   86  git add big-o-notation/
+   87  git status
+   88  git commit -m "completed big-o-notation exercise"
+   89  git switch main
+   90  git push origin big-o-notation 
+   91  git switch big-o-notation 
+   92  git switch npm-intro 
+   93  git switch main
+   94  git branch webpack-and-babel
+   95  git switch webpack-and-babel 
+   96  cd webpack-and-babel/
+   97  cd ./
+   98  cd .
+   99  cd ..
+  100  cd webpack-and-babel/
+  101  ls
+  102  cd ..
+  103  git status
+  104  git add webpack-and-babel/
+  105  git status
+  106  git commit -m "Completed webpack-and-babel exercises"
+  107  git status
+  108  git add webpack-and-babel/imports.js 
+  109  git status
+  110  git commit -m "forgot to save file before adding/committing"
+  111  git switch main
+  112  git push origin webpack-and-babel 
+  113  git status
+  114  git pull
+  115  git pull
+  116  git branch react-intro
+  117  git switch react-intro 
+  118  cd react-intro/
+  119  npx create-react-app my-app
+  120  cd my-app
+  121  npm start
+  122  git status
+  123  git add react-intro/
+  124  git status
+  125  git commit -m "completed react-intro exercises"
+  126  git switch main
+  127  git push origin react-intro 
+  128  git pull
+  129  git branch react-components
+  130  git branch react-jsx
+  131  git switch react-jsx 
+  132  cr react-jsx/
+  133  cd react-jsx/
+  134  npx create-react-app my-app
+  135  cd my-app
+  136  npm start
+  137  cd ..
+  138  cd ..
+  139  git switch react-components 
+  140  cd react-components/
+  141  npx create-react-app my-app
+  142  cd my-app
+  143  npm start
+  144  cd ../..
+  145  git status
+  146  git add react-components/
+  147  git status
+  148  git commit -m "completed react-components exercise"
+  149  git switch main
+  150  git push origin react-components 
+  151  git switch react-jsx 
+  152  git status
+  153  git add react-jsx/
+  154  git status
+  155  git commit -m "completed react-jsx exercise"
+  156  git switch main
+  157  git push origin react-jsx 
+  158  git switch react-jsx 
+  159  git switch react-components 
+  160  git switch main
+  161  git branch react-props-and-expressions
+  162  git switch react-props-and-expressions 
+  163  cd react-props-and-expressions/
+  164  npc create-react-app my-app
+  165  npx create-react-app my-app
+  166  cd my-app
+  167  npm start
+  168  cd ../..
+  169  git status
+  170  git add react-props-and-expressions/
+  171  git status
+  172  git commit -m "completed react-props-and-expressions exercise"
+  173  git switch main
+  174  git push origin react-props-and-expressions 
+  175  git branch react-events
+  176  git branch react-state
+  177  git switch react-events
+  178  cs react-events/
+  179  cd react-events/
+  180  npx create-react-app my-app
+  181  cd my-app
+  182  npm start
+  183  npm start
+  184  cd ../..
+  185  git switch react-state 
+  186  npx create-react-app my-app
+  187  cd react-state/
+  188  npx create-react-app my-app
+  189  cd my-app
+  190  cd react-state/
+  191  cd my-app/
+  192  npm start
+  193  npm start
+  194  cd ../..
+  195  git switch react-events
+  196  cd react-events/my-app/
+  197  npm start
+  198  cd ../..
+  199  git status
+  200  git add react-events/
+  201  git status
+  202  git commit -m "completed react-events exercises"
+  203  git switch main
+  204  git push origin react-events 
+  205  git switch react-state
+  206  cd react-state/my-app/
+  207  npm start
+  208  cd react-state/
+  209  cd my-app/
+  210  npm start
+  211  cd ../..
+  212  git status
+  213  git add react-state/
+  214  git status
+  215  git commit -m "completed react-state exercise"
+  216  git switch main
+  217  git push origin react-state 
+  218  git switch react-props-and-expressions 
+  219  git switch react-events 
+  220  git branch react-state
+  221  git switch react-state
+  222  git switch main
+  223  git branch react-refresher
+  224  git switch react-refresher 
+  225  cd react-refresher/
+  226  npx create-react-app my-app
+  227  cd my-app/
+  228  npm start
+  229  cd ../..
+  230  git switch main
+  231  git pull
+  232  cd react-components/
+  233  cd ..
+  234  git switch react-components 
+  235  git switch react-props-and-expressions 
+  236  git switch react-events 
+  237  git switch react-refresher 
+  238  cd react-refresher/
+  239  cd my-app/
+  240  npm start
+  241  git switch react-jsx 
+  242  cd react-events
+  243  git switch react-events 
+  244  git switch react-refresher 
+  245  npm start
+  246  git switch react-props-and-expressions 
+  247  git switch react-events 
+  248  git switch react-refresher 
+  249  npm start
+  250  npm start
+  251  cd ../..
+  252  git status
+  253  git add react-refresher/
+  254  git status
+  255  git commit -m "completed react-refresher exercise"
+  256  git switch main
+  257  git push origin react-refresher 
+  258  git pull
+  259  git pull
+  260  git switch react-components
+  261  cd react-components/
+  262  cd my-app/
+  263  git switch react-refresher 
+  264  cd ../..
+  265  git branch react-hot-button-component
+  266  git branch react-toggle-switch-component
+  267  git switch react-hot-button-component 
+  268  cd react-hot-button-component/
+  269  npx create-react-app my-app
+  270  cd my-app/
+  271  npm start
+  272  cd ../..
+  273  git status
+  274  git add react-hot-button-component/
+  275  git status
+  276  git commit -m "Completed react-hot-button challenge"
+  277  git switch main
+  278  git switch main
+  279  git push origin react-hot-button-component 
+  280  git switch react-toggle-switch-component 
+  281  cd react-toggle-switch-component/
+  282  npx create-react-app my-app
+  283  cd my-app/
+  284  npm start
+  285  cd ../..
+  286  git status
+  287  git add react-toggle-switch-component/
+  288  git status
+  289  git commit -m "completed react-toggle-switch-component challenge"
+  290  git switch main
+  291  git push origin react-toggle-switch-component 
+  292  cd react-toggle-switch-component/
+  293  git branch react-toggle-switch-component 
+  294  git switch react-toggle-switch-component 
+  295  cd my-app/
+  296  npm start
+  297  git status
+  298  cd ../..
+  299  git status
+  300  git add react-toggle-switch-component/my-app/src/CustomToggle.css 
+  301  git status
+  302  git commit -m "added transitions"
+  303  git switch main
+  304  git push origin react-toggle-switch-component 
+  305  git pull
+  306  git branch react-rendering-lists
+  307  git switch react-rendering-lists 
+  308  cd react-rendering-lists/
+  309  npx create-react-app my-app
+  310  cd my-app/
+  311  npm start
+  312  npm start
+  313  cd ../..
+  314  git statu
+  315  sgit status
+  316  git status
+  317  git add react-rendering-lists/
+  318  git status
+  319  git commit -m "completed react-rendering-lists exercise"
+  320  git switch main
+  321  git push origin react-rendering-lists 
+  322  git pull
+  323  git branch react-form-controls
+  324  git status
+  325  git switch react-form-controls 
+  326  cd react-form-controls/
+  327  npx create-react-app my-app
+  328  cd my-app
+  329  npm start
+  330  npm start
+  331  cd ../..
+  332  git status
+  333  git add react-form-controls/
+  334  git commit -m "completed react-form-controls exercise"
+  335  git switch main
+  336  git push origin react-form-controls 
+  337  git switch react-form-controls 
+  338  cd react-form-controls/my-app/
+  339  npm start
+  340  cd ../..
+  341  git branch main
+  342  git switch main
+  343  git branch react-validated-input-component
+  344  git switch react-validated-input-component 
+  345  cd react-validated-input-component/
+  346  npx create-react-app my-app
+  347  cd my-app/
+  348  npm start
+  349  npm i --save @fortawesome/fontawesome-svg-core
+  350  npm i --save @fortawesome/free-solid-svg-icons
+  351  npm i --save @fortawesome/react-fontawesome@latest
+  352  npm start
+  353  npm start
+  354  npm start
+  355  npm start
+  356  npm start
+  357  npm start
+  358  npm start
+  359  cd ../..
+  360  git status
+  361  git add react-validated-input-component/
+  362  git status
+  363  git commit -m "Completed react-validated-input-component"
+  364  git switch main
+  365  git push origin react-validated-input-component 
+  366  git pull
+  367  git branch react-design
+  368  git switch react-design
+  369  cd react-design/
+  370  npx create-react-app my-app
+  371  cd my-app
+  372  npm start
+  373  git status
+  374  cd ../..
+  375  git status
+  376  git add react-design/
+  377  git status
+  378  git commit -m "completed react-design mock-up"
+  379  git switch main
+  380  git push origin react-design
+  381  git switch react-validated-input-component 
+  382  cd react-validated-input-component/
+  383  cd my-app/
+  384  npm start
+  385  git status
+  386  cd ../..
+  387  git status
+  388  git add react-validated-input-component/my-app/src/Password.js 
+  389  git status
+  390  git commit -m "removed unnecessary state variable 'valid'"
+  391  git switch main
+  392  git push origin react-validated-input-component 
+  393  cd react-design/
+  394  git switch react-design 
+  395  cd my-app/
+  396  npm start
+  397  cd .../..
+  398  cd ../..
+  399  git status
+  400  git add react-design/
+  401  git status
+  402  git commit -m "added state variable and button events"
+  403  git switch main
+  404  git push origin react-design 
+  405  git switch react-design 
+  406  cd react-design/
+  407  cd my-app/
+  408  npm start
+  409  cd ../..
+  410  git status
+  411  git add react-design/
+  412  git status
+  413  git commit -m "added selected"
+  414  git switch main
+  415  git push origin react-design 
+  416  git pull
+  417  git pull
+  418  git branch react-search-component
+  419  git switch react-search-component 
+  420  npx create-react-app my-app
+  421  ls
+  422  cd react-search-component/
+  423  npx create-react-app my-app
+  424  cd my-app/
+  425  npm start
+  426  npm i --save @fortawesome/fontawesome-svg-core
+  427  git status
+  428  npm start
+  429  npm start
+  430  npm start
+  431  npm i --save @fortawesome/free-solid-svg-icons
+  432  npm i --save @fortawesome/react-fontawesome@latest
+  433  npm start
+  434  cd ../..
+  435  git status
+  436  git add react-search-component/
+  437  git status
+  438  git status
+  439  git add react-search-component/
+  440  git status
+  441  git commit -m "completed react-search-component challenge"
+  442  git switch main
+  443  git push origin react-search-component 
+  444  git branch react-accordion-component
+  445  git status
+  446  git switch react-accordion-component 
+  447  cd react-accordion-component/
+  448  npx create-react-app my-app
+  449  cd my-app/
+  450  cd ../..
+  451  git switch react-search-component 
+  452  cd react-search-component/
+  453  cd my-app/
+  454  npm start
+  455  cd ../..
+  456  git status
+  457  git add react-search-component/
+  458  git status
+  459  git commit -m "made requested revisions"
+  460  git status
+  461  git switch main
+  462  git push origin react-search-component 
+  463  git switch react-accordion-component 
+  464  git status
+  465  cd react-accordion-component/
+  466  cd my-app/
+  467  npm start
+  468  cd ../..
+  469  git status
+  470  git add react-accordion-component/
+  471  git status
+  472  git commit -m "Completed accordian challenge"
+  473  git switch main
+  474  git push origin react-accordion-component 
+  475  git branch react-app-drawer-component
+  476  git switch react-app-drawer-component 
+  477  cd react-app-drawer-component/
+  478  npx create-react-app my-app
+  479  cd my-app/
+  480  npm install react-icons
+  481  npm start
+  482  npm i --save @fortawesome/fontawesome-svg-core
+  483  npm i --save @fortawesome/free-solid-svg-icons
+  484  npm i --save @fortawesome/react-fontawesome@latest
+  485  npm start
+  486  npm start
+  487  npm start
+  488  npm start
+  489  npm start
+  490  cd ../..
+  491  git status
+  492  git add react-app-drawer-component/
+  493  git status
+  494  git commit -m "completed react-add-drawer challenge"
+  495  git status
+  496  git add react-app-drawer-component/
+  497  git status
+  498  git commit -m "removed commented code"
+  499  git switch main
+  500  git push origin react-app-drawer-component 
+  501  git branch command-line-basics
+  502  git branch node-intro
+  503  git switch command-line-basics
+  504  cd command-line-basics/
+  505  man mna
+  506  man man
+  507  man cat
+  508  man cat
+  509  cat laziness.txt
+  510  cat impatience.txt
+  511  cat hubris.txt
+  512  cat laziness.txt impatience.txt hubris.txt 
+  513  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  514  cat three-virtues.txt 
+  515  man ls
+  516  ls
+  517  ls -a
+  518  ls -F
+  519  ls -aF lfz-staff/ ? lfz-staff/contents.txt
+  520  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  521  cat lfz-staff/contents.txt 
+  522  man pwd
+  523  pwd
+  524  pwd > i-was-here.txt
+  525  ls
+  526  cat i-was-here.txt 
+  527  man echo
+  528  echo 'Hello, World!'
+  529  echo 'Hello, World!' > hello.txt
+  530  ls
+  531  cat hello.txt 
+  532  man touch
+  533  touch tag-youre-it.txt
+  534  ls
+  535  touch snoot/boop.txt
+  536  ls snoot
+  537  mkdir parent
+  538  ls parent/
+  539  man mkdir
+  540  mkdir -p parent/child
+  541  mkdir -p parent/child/grandchild
+  542  touch .gitkeep parent/child/grandchild/
+  543  touch parent/child/grandchild/.gitkeep
+  544  ls -a parent/
+  545  ls -a parent/child/grandchild/
+  546  man mv
+  547  mc pokiemans/ pokemon/
+  548  mv pokiemans/ pokemon/
+  549  man rm
+  550  rm lol.txt 
+  551  ls lol.txt
+  552  rm -r kill-me/
+  553  ls kill-me/
+  554  man cp
+  555  man history
+  556  cp and-then.txt no-and-then.txt
+  557  ls and-then.txt no-and-then.txt 
+  558  cat and-then.txt no-and-then.txt 
+  559  man history
+  560  history > command-history.txt
