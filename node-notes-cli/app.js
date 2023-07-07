@@ -2,6 +2,8 @@ import * as fs from 'node:fs/promises';
 
 const cliArgs = process.argv.slice(2);
 
+/* This function logs all the notes from the JSON file to the console.
+   I did not make it async since we use no asynchronous functions. */
 function readNotes(data) {
   try {
     const { notes } = data;
@@ -12,6 +14,9 @@ function readNotes(data) {
     console.log('ERROR: ', error);
   }
 }
+
+/* This function adds a new note to the json object. I chose to update
+   the nextId by a random amount b/c it's more fun :) */
 
 async function addNote(data, userNote) {
   try {
@@ -26,6 +31,8 @@ async function addNote(data, userNote) {
   }
 }
 
+/* This function deletes a note given an ID. If the ID does not match
+   any ID from the JSON object, the user is notified. */
 async function deleteNote(data, noteID) {
   try {
     const { notes } = data;
@@ -41,6 +48,8 @@ async function deleteNote(data, noteID) {
   }
 }
 
+/* This function updates a note given an ID and a new note. If the
+   ID given does not match an ID from the JSON object, the user is notified. */
 async function updateNote(data, noteID, userNote) {
   try {
     const { notes } = data;
@@ -56,6 +65,7 @@ async function updateNote(data, noteID, userNote) {
   }
 }
 
+/* A switch statement covering each available action: read, create, update, delete */
 if (cliArgs.length > 0) {
   const action = cliArgs[0];
   /* I chose to grab the json info here rather than outside the if-statement in case the user did not
