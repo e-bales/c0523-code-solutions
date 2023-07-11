@@ -35,10 +35,11 @@ app.get('/api/grades', (req, res) => {
 app.delete('/api/grades/:id', (req, res) => {
   if (grades[req.params.id]) {
     delete grades[req.params.id];
+    res.sendStatus(204);
   } else {
     console.log(`ID of ${req.params.id} not found, please try again...`);
+    res.sendStatus(404);
   }
-  res.sendStatus(204); // I could probably send a different status for each, but I'm not sure what status I would send for failure...404?
 });
 
 app.listen(port, () => {
