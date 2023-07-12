@@ -1,0 +1,46 @@
+.drawer {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  width: 15rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+html,
+body,
+#root,
+.App,
+.drawer {
+  height: 100%;
+}
+
+.drawer-top {
+  padding-left: 1.5rem;
+}
+
+.drawer-links {
+  margin-top: 0.5rem;
+}
+
+.drawer-links > .link {
+  margin-top: -0.5rem;
+}
+
+h4 {
+  padding-left: 1.5rem;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h4:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  transform: translateX(-283px);
+}
+
+.shown {
+  transform: translateX(0);
+}
