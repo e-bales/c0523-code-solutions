@@ -12,16 +12,16 @@ export default function List() {
   //    - Read the items using `readItems` and update state so the list displays
   //    - Handle errors from `readItems`
   useEffect(() => {
-    const possibleItems = readItems();
-    possibleItems.then(
-      (value) => {
-        setItems(value);
-      },
-      (error) => {
-        setError(error);
+    async function getItems() {
+      try {
+        const possibleItems = await readItems();
+        setItems(possibleItems);
+      } catch (err) {
+        setError(err);
       }
-    );
-    setIsLoading(false);
+      setIsLoading(false);
+    }
+    getItems();
   }, []);
 
   if (isLoading) {
