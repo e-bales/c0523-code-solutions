@@ -1,0 +1,7 @@
+.arrow-button {
+  font-size: 2rem;
+}
+
+.arrow-button:hover {
+  cursor: pointer;
+}
