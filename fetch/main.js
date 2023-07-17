@@ -7,7 +7,7 @@ async function getData(url) {
     const data = await response.json();
     console.log(data);
   } catch (err) {
-    console.error(`An unexpected error occurred...: ${err}`);
+    console.error(err);
   }
 }
 
