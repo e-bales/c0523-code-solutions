@@ -24,6 +24,7 @@ export default function Users() {
         setUsers(data);
         setIsLoading(false);
       } catch (err) {
+        setIsLoading(false);
         setError(err);
       }
     }

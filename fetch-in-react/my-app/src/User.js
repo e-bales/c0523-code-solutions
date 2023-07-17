@@ -21,6 +21,7 @@ export default function User({ userId, onCancel }) {
         setUser(userData);
         setIsLoading(false);
       } catch (err) {
+        setIsLoading(false);
         setError(err);
       }
     }
