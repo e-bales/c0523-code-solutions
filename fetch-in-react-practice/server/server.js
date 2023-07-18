@@ -31,7 +31,11 @@ app.get('/api/todos', async (req, res, next) => {
 });
 
 app.post('/api/todos', async (req, res, next) => {
+  async function delay(msecs) {
+    return new Promise((resolve) => setTimeout(() => resolve(), msecs));
+  }
   try {
+    await delay(1500);
     const { task, isCompleted = false } = req.body;
     if (!task || typeof isCompleted !== 'boolean') {
       throw new ClientError(400, 'task and isCompleted are required');

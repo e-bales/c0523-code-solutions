@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function TodoForm({ onSubmit }) {
+export default function TodoForm({ onSubmit, apiLoading }) {
   // Note: Use a controlled form so we can easily reset it after submit.
   const [task, setTask] = useState('');
 
@@ -26,7 +26,7 @@ export default function TodoForm({ onSubmit }) {
         placeholder="What to do?"
       />
       <div className="input-group-append">
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" disabled={apiLoading}>
           Add Todo
         </button>
       </div>

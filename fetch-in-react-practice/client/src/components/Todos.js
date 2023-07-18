@@ -3,11 +3,14 @@ import React, { useEffect, useState } from 'react';
 import PageTitle from './PageTitle';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+import ApiSpinner from './ApiSpinner';
+import './Todos.css';
 
 export default function Todos() {
   const [todos, setTodos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
+  const [apiLoading, setApiLoading] = useState(false);
 
   /* Implement useEffect to fetch all todos. Hints are at the bottom of the file. */
   useEffect(() => {
@@ -31,6 +34,7 @@ export default function Todos() {
   /* Implement addTodo to add a new todo. Hints are at the bottom of the file. */
   async function addTodo(newTodo) {
     try {
+      setApiLoading(true);
       const response = await fetch('/api/todos', {
         method: 'POST',
         headers: {
@@ -45,6 +49,8 @@ export default function Todos() {
       setTodos((prev) => prev.concat([data]));
     } catch (err) {
       setError(err);
+    } finally {
+      setApiLoading(false);
     }
   }
 
@@ -83,12 +89,15 @@ export default function Todos() {
     return <div>Error! {error.message}</div>;
   }
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col pt-5">
-          <PageTitle text="Todo App" />
-          <TodoForm onSubmit={addTodo} />
-          <TodoList todos={todos} toggleCompleted={toggleCompleted} />
+    <div className="outer-container">
+      {apiLoading ? <ApiSpinner text="Loading..." /> : ''}
+      <div className="container">
+        <div className="row">
+          <div className="col pt-5">
+            <PageTitle text="Todo App" />
+            <TodoForm onSubmit={addTodo} apiLoading={apiLoading} />
+            <TodoList todos={todos} toggleCompleted={toggleCompleted} />
+          </div>
         </div>
       </div>
     </div>
