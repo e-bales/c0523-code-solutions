@@ -19,8 +19,12 @@ export function useTodos() {
      * and set them into the `todos` state.
      */
     async function getTodos() {
-      const data = await readTodos();
-      setTodos(data);
+      try {
+        const data = await readTodos();
+        setTodos(data);
+      } catch (err) {
+        console.error(err);
+      }
     }
     if (!todos) getTodos();
   }, [todos]);
@@ -30,8 +34,12 @@ export function useTodos() {
      * When the promise returned by that function resolves, update the `todos` state.
      * Note that it is critical that you pass a _new_ array. Do not modify the `todos` array.
      */
-    const newTask = await createTodo(newTodo);
-    setTodos((prev) => prev.concat([newTask]));
+    try {
+      const newTask = await createTodo(newTodo);
+      setTodos((prev) => prev.concat([newTask]));
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   async function toggleCompleted(todoId) {
@@ -41,11 +49,15 @@ export function useTodos() {
      * When updating this state, use the updated `todo` returned from the API.
      * Note that it is critical that you pass a _new_ array. Do not modify the `todos` array.
      */
-    const [oldTask] = todos.filter((item) => item.todoId === todoId);
-    oldTask.isCompleted = !oldTask.isCompleted;
-    const newTask = await updateTodo(oldTask);
-    const newTodos = todos.map((x) => (x.todoId === todoId ? newTask : x));
-    setTodos(newTodos);
+    try {
+      const [oldTask] = todos.filter((item) => item.todoId === todoId);
+      oldTask.isCompleted = !oldTask.isCompleted;
+      const newTask = await updateTodo(oldTask);
+      const newTodos = todos.map((x) => (x.todoId === todoId ? newTask : x));
+      setTodos(newTodos);
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   return {
