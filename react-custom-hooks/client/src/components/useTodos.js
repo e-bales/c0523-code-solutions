@@ -24,6 +24,7 @@ export function useTodos() {
         setTodos(data);
       } catch (err) {
         console.error(err);
+        setError(err);
       }
     }
     if (!todos) getTodos();
@@ -39,6 +40,7 @@ export function useTodos() {
       setTodos((prev) => prev.concat([newTask]));
     } catch (err) {
       console.error(err);
+      setError(err);
     }
   }
 
@@ -57,6 +59,7 @@ export function useTodos() {
       setTodos(newTodos);
     } catch (err) {
       console.error(err);
+      setError(err);
     }
   }
 
