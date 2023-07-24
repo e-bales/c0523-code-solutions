@@ -7,29 +7,19 @@ describe('evenNumbers', () => {
     const result = evenNumbers(numbers);
     expect(result).toEqual([4, 10, 0]);
   });
-});
-
-describe('evenNumbers', () => {
   it('returns an emtpy array given an empty array', () => {
     const numbers = [];
     const result = evenNumbers(numbers);
     expect(result).toEqual([]);
   });
-});
-
-describe('evenNumbers', () => {
   it('returns the even numbers of an array, even if that are strings', () => {
     const numbers = ['1', '2', 4, '5', 7];
     const result = evenNumbers(numbers);
     expect(result).toEqual(['2', 4]);
   });
-});
-
-describe('evenNumbers', () => {
   it('returns an error message if not provided an array', () => {
     const numbers = 'A String';
-    const result = evenNumbers(numbers);
-    expect(result).toEqual('Please provide an array.');
+    expect(() => evenNumbers(numbers)).toThrow('Please provide an array.');
   });
 });
 
@@ -40,29 +30,21 @@ describe('toDollars', () => {
     const result = toDollars(amount);
     expect(result).toEqual('$12.00');
   });
-});
-
-describe('toDollars', () => {
   it('returns the correct dollarified amount given a longer float', () => {
     const amount = 13.442;
     const result = toDollars(amount);
     expect(result).toEqual('$13.44');
   });
-});
-
-describe('toDollars', () => {
   it('returns the correct dollarified amount given an amount < $1', () => {
     const amount = 0.56;
     const result = toDollars(amount);
     expect(result).toEqual('$0.56');
   });
-});
-
-describe('toDollars', () => {
   it('returns an error message given a string instead of an int/float', () => {
     const amount = 'A String';
-    const result = toDollars(amount);
-    expect(result).toEqual('Please enter an integer or float.');
+    expect(() => toDollars(amount)).toThrow(
+      'Please enter an integer or float.'
+    );
   });
 });
 
@@ -90,8 +72,7 @@ describe('divideBy', () => {
   it('returns an error message if the provided divisor is 0', () => {
     const numbers = [2, 6, 12];
     const divisor = 0;
-    const result = divideBy(numbers, divisor);
-    expect(result).toEqual('Cannot divide by 0');
+    expect(() => divideBy(numbers, divisor)).toThrow('Cannot divide by 0');
   });
 });
 
@@ -99,8 +80,9 @@ describe('divideBy', () => {
   it('returns an error message if the provided divisor is not an int/float', () => {
     const numbers = [2, 6, 12];
     const divisor = '2';
-    const result = divideBy(numbers, divisor);
-    expect(result).toEqual('Please provide only integers or floats.');
+    expect(() => divideBy(numbers, divisor)).toThrow(
+      'Please provide only integers or floats.'
+    );
   });
 });
 
@@ -108,8 +90,9 @@ describe('divideBy', () => {
   it('returns an error message if not provided an array', () => {
     const numbers = '[2, 6, 12]';
     const divisor = 4;
-    const result = divideBy(numbers, divisor);
-    expect(result).toEqual('Please provide an array.');
+    expect(() => divideBy(numbers, divisor)).toThrow(
+      'Please provide an array.'
+    );
   });
 });
 
@@ -148,7 +131,7 @@ describe('multiplyBy', () => {
     const object = { a: 1, b: '2', c: 5 };
     const multiplier = 2;
     const result = multiplyBy(object, multiplier);
-    expect(result).toEqual(object);
+    expect(result).toBe(object);
   });
 });
 
@@ -156,8 +139,7 @@ describe('multiplyBy', () => {
   it('returns an error message if not provided an int or float as a multiplier', () => {
     const object = { a: 1, b: '2', c: 5 };
     const multiplier = '2';
-    const result = multiplyBy(object, multiplier);
-    expect(result).toEqual(
+    expect(() => multiplyBy(object, multiplier)).toThrow(
       'Please provide an integer or float for a multiplier.'
     );
   });

@@ -3,7 +3,7 @@
  */
 export function evenNumbers(numbers) {
   if (!Array.isArray(numbers)) {
-    return 'Please provide an array.';
+    throw new Error('Please provide an array.');
   }
   return numbers.filter((n) => n % 2 === 0);
 }
@@ -16,7 +16,7 @@ export function evenNumbers(numbers) {
  */
 export function toDollars(amount) {
   if (Number.isNaN(Number(amount))) {
-    return 'Please enter an integer or float.';
+    throw new Error('Please enter an integer or float.');
   }
   if (Number.isInteger(amount)) {
     return `$${amount}.00`;
@@ -34,13 +34,13 @@ export function toDollars(amount) {
  */
 export function divideBy(numbers, divisor) {
   if (divisor === 0) {
-    return 'Cannot divide by 0';
+    throw new Error('Cannot divide by 0');
   }
   if (typeof divisor !== 'number') {
-    return 'Please provide only integers or floats.';
+    throw new Error('Please provide only integers or floats.');
   }
   if (!Array.isArray(numbers)) {
-    return 'Please provide an array.';
+    throw new Error('Please provide an array.');
   }
   return numbers.map((x) => x / divisor);
 }
@@ -54,7 +54,7 @@ export function divideBy(numbers, divisor) {
  */
 export function multiplyBy(obj, multiplier) {
   if (typeof multiplier !== 'number') {
-    return 'Please provide an integer or float for a multiplier.';
+    throw new Error('Please provide an integer or float for a multiplier.');
   }
   Object.entries(obj).forEach(([key, value]) => {
     if (typeof obj[key] === 'number') {
