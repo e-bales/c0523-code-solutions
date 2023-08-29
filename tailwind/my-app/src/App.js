@@ -4,17 +4,17 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-sm">Hello there!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
+      <header className="header-wrap">
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <div className="header p-6 bg-slate-400">
+          <p className="text-sm text-white font-bold">Hello there!</p>
+        </div>
       </header>
+      <div className="body">
+        <div className="Title w-64 m-6 pr-2 text-right bg-gradient-to-r from-gray-300 rounded-xl">
+          <h1 className="text-black text-xl p-2">Welcome!</h1>
+        </div>
+      </div>
     </div>
   );
 }
