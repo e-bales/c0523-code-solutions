@@ -37,3 +37,7 @@
     transform: rotate(360deg);
   }
 } */
+
+.circle-bg {
+  transform: translate(-50%, -50%);
+}
