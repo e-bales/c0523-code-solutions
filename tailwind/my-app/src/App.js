@@ -1,32 +1,38 @@
 import logo from './logo.svg';
+import profilePic from './linkedin_pfp_square.png';
+import cutOut from './profile-cutout.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="header-wrap">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <div className="header py-6 px-4 bg-slate-400 shadow">
-          <span className="text-3xl font-sans text-white font-bold">
-            Curate
-          </span>
+    <div className="App h-screen">
+      <header className="header-wrap py-4">
+        <div className="header">
+          <h3 className="header-link">About</h3>
+          <h3 className="header-link">Work</h3>
+          <h3 className="header-link">Github</h3>
+          <h3 className="header-link">Resume</h3>
         </div>
       </header>
-      <div className="body">
-        {/* <div className="Title w-64 m-6 pr-2 text-right bg-gradient-to-r from-gray-300 rounded-xl">
-          <h1 className="text-black text-xl p-2">Welcome!</h1>
-        </div> */}
-        <div className="img-wrap m-auto relative -translate-x-24">
-          <div className="relative w-80 hover:opacity-60">
-            <img
-              className="relative z-20"
-              src="https://icones.pro/wp-content/uploads/2021/04/icone-d-ordinateur-noir.png"
-              alt="computer"
-            />
-            <div className="circle-bg bg-blue-100 w-72 h-72 rounded-full z-10 absolute inset-0 top-1/2 left-1/2"></div>
+      <section className="body">
+        <div className="body-wrap">
+          <div className="row">
+            <h1 className="title">Hi, I'm Eli!</h1>
+          </div>
+          <div className="row">
+            <h2 className="sub-title">Welcome to my page!</h2>
+          </div>
+          <div className="row">
+            <h3 className="info">
+              Thanks for visiting! I'm a Software Engineer with a background in
+              AI and Web Development. Check out some of my work in the links
+              above, or download my Resume to learn more about me. Want to get
+              in contact? Connect with me on LinkedIn, or send me an email at
+              elibales21@gmail.com.
+            </h3>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
