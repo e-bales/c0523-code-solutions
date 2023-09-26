@@ -1,13 +1,34 @@
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../Avenir.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../TiemposHeadline-Regular.woff2') format('woff2');
+}
+
 .home-page {
-  width: 95%;
+  width: 100%;
   margin: auto;
+}
+
+.header-wrap {
+  border-bottom: 2px solid #ebedf0;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #ebedf0;
-  padding: 1rem 2.5rem;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 80%;
 }
 
 .row {
@@ -17,6 +38,7 @@
 
 .col-half {
   display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
@@ -33,7 +55,7 @@
 .header-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -53,24 +75,25 @@
   border-radius: 0.5rem;
   padding: 0 1rem;
   height: 3rem;
+  border: 1px solid #294464;
 }
 
 .image-section {
   display: flex;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .hero-img-wrap {
-  width: 70rem;
-  height: 34rem;
+  width: 80%;
+  height: 36rem;
   position: relative;
 }
 
 .img-covering {
   position: absolute;
   background: black;
-  opacity: 15%;
+  opacity: 25%;
   width: 100%;
   height: 100%;
 }
@@ -80,6 +103,80 @@
   object-fit: cover;
 }
 
-.clinicians {
+.text-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 10%;
+  left: 5%;
+}
+
+.col-sixty {
+  width: 45%;
+  color: white;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.tiempos {
+  font-family: 'Tiempos Headline';
+}
+
+.hero-info {
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  background-color: #294464;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  height: 4rem;
+  border: 1px solid #294464;
+}
+
+.clinicians-wrap {
   background: #fafafa;
+  color: #6e6e6e;
+  padding-bottom: 6rem;
+  border-bottom: 2px solid #f0f1f3;
+}
+
+.clinicians {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.clinicians > h2 {
+  padding-top: 4rem;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.clinicians > h3 {
+  width: 40%;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 3rem;
+}
+
+.locations > div {
+  display: flex;
+  justify-content: center;
+}
+
+.locations h3 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
