@@ -1,0 +1,41 @@
+.learn-more-wrap {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.learn-more {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  color: #6e6e6e;
+}
+
+.learn-more .col-half {
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more button {
+  width: 40%;
+}
+
+.learn-more h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.learn-more h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.button-half {
+  display: flex;
+  align-items: flex-end;
+}
+
+.address-wrap {
+  background: #525351;
+  color: white;
+}
