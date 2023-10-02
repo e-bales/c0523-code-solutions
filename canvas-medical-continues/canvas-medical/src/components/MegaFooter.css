@@ -1,6 +1,6 @@
 .learn-more-wrap {
   width: 100%;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .learn-more {
@@ -38,4 +38,65 @@
 .address-wrap {
   background: #525351;
   color: white;
+}
+
+.address {
+  width: 80%;
+  margin: auto;
+  padding: 6rem 0;
+  display: flex;
+}
+
+.white-logo-wrap {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.white-logo {
+  width: 100%;
+}
+
+.address-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-col > p {
+  margin: 0.15rem;
+}
+
+.address-col > h3 {
+  margin: 0.75rem 0;
+  display: inline;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.address-col > h2 {
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+.col-info {
+  width: 50%;
+  display: flex;
+}
+
+.footer-wrap {
+  background: #fafafa;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
+  color: #525351;
+  padding: 2rem 0;
+}
+
+.footer p {
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
