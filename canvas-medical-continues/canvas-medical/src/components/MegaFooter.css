@@ -1,6 +1,8 @@
 .learn-more-wrap {
   width: 100%;
-  margin: 4rem 0;
+  padding: 4rem 0;
+  border-bottom: 3px solid #f0f1f3;
+  border-top: 3px solid #f0f1f3;
 }
 
 .learn-more {
@@ -38,6 +40,7 @@
 .address-wrap {
   background: #525351;
   color: white;
+  border-bottom: 3px solid #f0f1f3;
 }
 
 .address {
